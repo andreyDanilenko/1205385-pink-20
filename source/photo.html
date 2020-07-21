@@ -6,28 +6,19 @@
     <title>Pink</title>
 </head>
 
-<body class="body__page">
-    <header class="page-header page-header__color">
-        <div class="main-header__wrapper">
+<body class="page__body">
+    <header class="page-header">
+        <div class="page-header__wrapper">
             <a href="#" class="page-header__logo">
                 <img src="img/logotype-mobile.svg" width="74" height="23" alt="Пинк">
             </a>
-            <button class="main-nav__toggle" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-            </button>
         </div>
 
-        <!--Тут  совсем понятно. При нажатии на бургер вылезает другой блок с лого в сочетании с навигацией,
-       уже не прозрачный и другой высоты (именно элемент с лого). Я сделал отдельным блоком. Или можно просто в стилях потом задать изменения при нажатии?-->
-
         <nav class="main-nav main-nav__hidden">
+            <button class="main-nav__toggle" type="button">
+                <span class="aria-label">Открыть меню</span>
+            </button>
             <div class="main-nav__wrapper">
-                <a href="#" class="page-header__logo">
-                    <img src="img/logotype-mobile.svg" width="74" height="23" alt="Пинк">
-                </a>
-                <button class="main-nav__toggle" type="button">
-                    <span class="visually-hidden">Закрыть меню</span>
-                </button>
                 <ul class="main-nav__list site-list">
                     <li class="site-list__item site-list__item--active">
                         <a href="index.html">
@@ -45,7 +36,7 @@
                         </a>
                     </li>
                     <li class="site-list__item">
-                        <a href="#">
+                        <a href="https://htmlacademy.ru/intensive/adaptive">
                             HTML Academy
                         </a>
                     </li>
@@ -55,7 +46,7 @@
     </header>
 
     <main class="page-main">
-        <div class="main-heading__wrapper">
+        <div class="main__wrapper">
             <h1>Фотографии пользователей</h1>
         </div>
         <section class="photo">
