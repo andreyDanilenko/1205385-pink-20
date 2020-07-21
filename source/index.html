@@ -6,31 +6,22 @@
   <title>Pink</title>
 </head>
 
-<body class="body__page">
+<body class="page__body">
   <header class="page-header">
-    <div class="main-header__wrapper">
+    <div class="page-header__wrapper">
       <a href="#" class="page-header__logo">
         <img src="img/logotype-mobile.svg" width="74" height="23" alt="Пинк">
       </a>
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
     </div>
 
-    <!--Тут не совсем понятно. При нажатии на бургер вылезает другой блок с лого в сочетании с навигацией,
-       уже не прозрачный и другой высоты (именно элемент с лого). Я сделал отдельным блоком. Или можно просто в стилях потом задать изменения при нажатии?-->
-
     <nav class="main-nav main-nav__hidden">
+      <button class="main-nav__toggle" type="button">
+        <span class="aria-label">Открыть меню</span>
+      </button>
       <div class="main-nav__wrapper">
-        <a href="#" class="page-header__logo">
-          <img src="img/logotype-mobile.svg" width="74" height="23" alt="Пинк">
-        </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="#">
+            <a href="index.html">
               Главная
             </a>
           </li>
@@ -45,7 +36,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a href="https://htmlacademy.ru/intensive/adaptive">
               HTML Academy
             </a>
           </li>
@@ -93,9 +84,6 @@
       <h2 class="visually-hidden">Отзывы</h2>
       <div class="reviews__wrapper slider">
 
-        <a class="reviews__write button" href="form.html">Оставить свой</a>
-        <!--В учебном барбершопа в разметке так же добавлена кнопка,но ее нет в макете. Как это работает?-->
-
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
@@ -105,11 +93,6 @@
                 выложенной фотографии!»</p>
             </div>
           </blockquote>
-
-          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__next" type="button">Следующий отзыв</button>
-          <!--То же самое со стрелками, их нет в макете, есть только радио точки. Или мы делаем полную разметку, чтоб в разных версиях
-          что то скрыть а что то наоброт открыть?-->
 
         </div>
         <p class="reviews__toggles slider__toggles">
@@ -216,9 +199,6 @@
       </svg>
     </div>
   </footer>
-
-
-
 </body>
 
 </html>
