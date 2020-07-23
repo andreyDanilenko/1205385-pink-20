@@ -7,6 +7,7 @@
 </head>
 
 <body class="page__body">
+
   <header class="page-header">
     <div class="page-header__wrapper">
       <a href="#" class="page-header__logo">
@@ -44,97 +45,108 @@
       </div>
     </nav>
   </header>
-
   <main class="page-main">
-    <section class="info">
-      <h1 class="info__head">Взгляните на жизнь иначе!</h1>
+    <section class="main-heading">
+      <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
     </section>
-    <section class="software">
-      <button class="button button__software" type="button">Скачать приложение</button>
-      <ul class="software__list">
-        <li class="software__item software__icon software__icon--iphone"></li>
-        <li class="software__item software__icon software__icon--android"></li>
-        <li class="software__item software__icon software__icon--windows8"></li>
-      </ul>
-      <p class="software__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </section>
-    <section class="offer">
-      <h2 class="visually-hidden">Информация</h2>
-      <p>Устали от серости мегаполиса?</p>
-      <p>Нам есть, что вам предложить!</p>
-      <ul class="offer__list">
-        <li class="offer__item">
-          <h3 class="offer__title">Поднимает настроение</h3>
-          <p class="offer__discription">Приложение позволит вам победить осеннюю хандру
-            и депрессию буквально в несколько кликов!</p>
-        </li>
-        <li class="offer__item">
-          <h3 class="offer__title">Меняет мир вокруг</h3>
-          <p class="offer__discription">Сделайте снимок и украсьте его смайликом
-            или текстовой подписью, чтобы усилить эффект</p>
-        </li>
-        <li class="offer__item">
-          <h3 class="offer__title">Заводит новых друзей</h3>
-          <p class="offer__discription">Ставьте лайки, комментируйте, делитесь фотографиями
-            с друзьями и заводите новых</p>
-        </li>
-      </ul>
-    </section>
-    <section class="reviews">
-      <h2 class="visually-hidden">Отзывы</h2>
-      <div class="reviews__wrapper slider">
-
-        <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item">
-            <div class="reviews__author-info">
-              <h3 class="reviews__author-name">Николай Петров</h3>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому
-                взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к
-                выложенной фотографии!»</p>
-            </div>
-          </blockquote>
-
+    <section class="achievements">
+      <h2>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+      <form class="achievements__form" method="get" action="https://echo.htmlacademy.ru">
+        <ul class="achievements__list-initial">
+          <li class="achievements__item-initial">
+            <label class="achievements__name" for="surname-name">Фамилия</label></br>
+            <input class="achievements__name-text" id="surname-name" type="text" placeholder="Укажите фамилию *"
+              required>
+          </li>
+          <li class="achievements__item-initial">
+            <label class="achievements__name" for="name-name">Имя</label></br>
+            <input class="achievements__name-text" id="name-name" type="text" placeholder="Укажите ваше имя *" required>
+          </li>
+          <li class="achievements__item-initial">
+            <label class="achievements__name" for="patronymic-name">Отчество</label></br>
+            <input class="achievements__name-text" id="patronymic-name" type="text" placeholder="Ну и отчество тоже">
+          </li>
+        </ul>
+        <fieldset class="achievements__filter-act filter-act">
+          <legend>Ваши безбашенные достижения в путешествии</legend>
+          <ul class="filter-act__list">
+            <li class="filter-act__item">
+              <input class="visually-hidden filter-act__input filter-act__input--checkbox" type="checkbox" name="selfie"
+                id="filter-selfie" checked>
+              <label for="filter-selfie">Сделал селфи с акулой</label>
+            </li>
+            <li class="filter-act__item">
+              <input class="visually-hidden filter-act__input filter-act__input--checkbox" type="checkbox" name="tanned"
+                id="filter-tanned" checked>
+              <label for="filter-tanned">Обгорел на пляже</label>
+            </li>
+            <li class="filter-act__item">
+              <input class="visually-hidden filter-act__input filter-act__input--checkbox" type="checkbox" name="chuck"
+                id="filter-chuck">
+              <label for="filter-chuck">Видел Чака Норриса</label>
+            </li>
+            <li class="filter-act__item">
+              <input class="visually-hidden filter-act__input filter-act__input--checkbox" type="checkbox"
+                name="purchases" id="filter-purchases">
+              <label for="filter-purchases">Накупил сувениров</label>
+            </li>
+            <li class="filter-act__item">
+              <input class="visually-hidden filter-act__input filter-act__input--checkbox" type="checkbox"
+                name="originality" id="filter-originality" checked>
+              <label for="filter-originality">Удержал башню</label>
+            </li>
+            <li class="filter-act__item">
+              <input class="visually-hidden filter-act__input filter-act__input--checkbox" type="checkbox" name="norms"
+                id="filter-norms">
+              <label for="filter-norms">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+        <ul class="achievements__list-contacts">
+          <li class="achievements__item-contacts">
+            <label class="achievements__phone" for="phone">Номер телефона</label></br>
+            <input class="achievements__phone-text" id="phone" type="tel" placeholder="Номер, пожалуйста">
+          </li>
+          <li class="achievements__item-email">
+            <label class="achievements__email" for="email">Адрес почты</label></br>
+            <input class="achievements__email-text" id="email" type="email" placeholder="Введите почту *" required>
+          </li>
+        </ul>
+        <fieldset class="achievements__filter-soft filter-soft">
+          <legend>С каким приложением путешествовали?</legend>
+          <ul class="filter-soft__list">
+            <li class="filter-soft__item">
+              <input class="visually-hidden filter__soft-input filter__soft-input--radio" type="radio" name="soft-group"
+                value="ios" id="filter-ios" checked>
+              <label for="filter-ios">Pink для iOS</label>
+            </li>
+            <li class="filter-soft__item">
+              <input class="visually-hidden filter__soft-input filter__soft-input--radio" type="radio" name="soft-group"
+                value="android" id="filter-android">
+              <label for="filter-android">Pink на Android</label>
+            </li>
+            <li class="filter-soft__item">
+              <input class="visually-hidden filter__soft-input filter__soft-input--radio" type="radio" name="soft-group"
+                value="windows" id="filter-windows">
+              <label for="filter-windows">Windows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="achievements__comment comment">
+          <label class="comment__heading" for="comment">Опишите свои эмоции</label></br>
+          <textarea class="comment__text comment__text--window" name="comment" id="comment"
+            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
-        <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle slider__toggle--current" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+        <button type="submit" class="button achievements__form__button">Отправить форму</button>
+        <p class="filter__legend">
+          <small>
+            * — обязательные поля
+          </small>
         </p>
-      </div>
-    </section>
-    <section class="price">
-      <h2 class="visually-hidden">Цена</h2>
-      <div class="price__wrapper slider">
-        <div class="price__list slider__list">
-          <div class="price__item slider__item">
-            <ul class="properties__list">
-              <li class="properties__item">Стандарт 3,99 usd<span></span></li>
-              <li class="properties__item">Розовый фильтр<span></span></li>
-              <li class="properties__item">Смайлики<span></span></li>
-              <li class="properties__item">Комментарии<span></span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <p class="price__toggles slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle slider__toggle--curren" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
-      </p>
-    </section>
-    <section class="contacts">
-      <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-      <p class="contacts__phone">Звоните:<span class="contacts__phone-mobile">+7 (812) 555-66-66</span></p>
-      <p class="contacts__email">Пишите:<span class="contacts__email-address">mail@htmlacademy.ru</span></p>
-      <p class="contacts__address">Приезжайте в гости:<span class="contacts__address-place">ул. Большая
-          Конюшенная, 19/8></span></p>
-    </section>
-    <section class="map">
-      <div class="map__trigon"></div>
-      <div class="map__marker"></div>
+
+      </form>
     </section>
   </main>
-
   <footer class="page-footer">
     <div class="page-footer__logo">
       <a href="#">
@@ -199,6 +211,7 @@
       </svg>
     </div>
   </footer>
+
 </body>
 
 </html>
