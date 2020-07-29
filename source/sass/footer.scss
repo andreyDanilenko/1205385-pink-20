@@ -1,6 +1,7 @@
 .page-footer {
   padding: 40px 20px;
 }
+
 .page-footer__social {
   padding: 0 46px;
 }
@@ -8,21 +9,20 @@
 .social__list {
   display: flex;
   justify-content: space-between;
-  margin: 38px 0; }
+  margin: 38px 0;
+}
 
 .social__link {
   display: inline-block;
   padding: 16px 15px 15px 17px;
   border: 3px solid rgba(45, 54, 69, 0.3);
   border-radius: 50%;
-   &--facebook {
+
+  &--facebook {
     padding: 14px 20.5px 12px 20.5px;
-   }
-   &--youtube {
-    padding: 17px 16px 15px 19px; }
+  }
+
+  &--youtube {
+    padding: 17px 16px 15px 19px;
+  }
 }
-
-
-
-
-
