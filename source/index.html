@@ -4,38 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <title>Pink</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <a href="#" class="page-header__logo">
-        <img src="img/logotype-mobile.svg" width="74" height="23" alt="Пинк">
-      </a>
-    </div>
     <nav class="main-nav main-nav--hidden">
-      <button class="main-nav__toggle" type="button">
-        <span class="aria-label">Открыть меню</span>
-      </button>
+      <div class="page-header__wrapper">
+        <a href="#" class="page-header__logo">
+          <img src="img/logotype-mobile.svg" width="74" height="23" alt="Пинк">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="aria-label">Открыть меню</span>
+        </button>
+      </div>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="index.html">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">
+            <a class="site-list__link" href="photo.html">
               Фотографии
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__link" href="form.html">
               Конкурс
             </a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
               HTML Academy
             </a>
           </li>
@@ -43,13 +45,14 @@
       </div>
     </nav>
   </header>
-
   <main class="page-main">
-    <section class="info">
-      <h1 class="info__head">Взгляните на жизнь иначе!</h1>
+    <section class="page-main__heading heading">
+      <h1 class="heading__text-index">Взгляните на жизнь иначе!</h1>
+      <img src="img/iphone-hand-mobile@1x.png" alt="">
     </section>
     <section class="software">
-      <button class="button button__software" type="button">Скачать приложение</button>
+      <a href="https://www.apple.com/ru/ios/app-store/" class="button software__button" type="button">Скачать
+        приложение</a>
       <ul class="software__list">
         <li class="software__item software__icon software__icon--iphone"></li>
         <li class="software__item software__icon software__icon--android"></li>
@@ -59,8 +62,10 @@
     </section>
     <section class="offer">
       <h2 class="visually-hidden">Информация</h2>
-      <p>Устали от серости мегаполиса?</p>
-      <p>Нам есть, что вам предложить!</p>
+      <div class="offer__question-answer">
+        <p class="offer__question">Устали от серости мегаполиса?</p>
+        <p class="offer__answer">Нам есть, что вам предложить!</p>
+      </div>
       <ul class="offer__list">
         <li class="offer__item">
           <h3 class="offer__title">Поднимает настроение</h3>
@@ -126,7 +131,7 @@
       <p class="contacts__phone">Звоните:<span class="contacts__phone-mobile">+7 (812) 555-66-66</span></p>
       <p class="contacts__email">Пишите:<span class="contacts__email-address">mail@htmlacademy.ru</span></p>
       <p class="contacts__address">Приезжайте в гости:<span class="contacts__address-place">ул. Большая
-          Конюшенная, 19/8></span></p>
+          Конюшенная, 19/8</span></p>
     </section>
     <section class="map">
       <div class="map__trigon"></div>
