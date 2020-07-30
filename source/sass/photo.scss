@@ -1,0 +1,51 @@
+.heading__text-photo {
+  padding: 36px 20px 36px;
+  line-height: 33px;
+}
+
+.photo {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.photo__title {
+  padding: 34px 10px 50px;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.photo__item {
+  padding: 10px 0;
+}
+
+.card-frame__comment {
+  padding: 26px 17px;
+  line-height: 24px;
+  text-align: start;
+}
+
+.card-frame {
+  background: #f2f2f2;
+  img {
+    width: 100%;
+  }
+}
+
+.card-frame__author {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.card-frame__time {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.card-frame__text {
+  font-size: 14px;
+}
+
+.card-frame__button {
+  font-size: 12px;
+  margin-top: 14px;
+}

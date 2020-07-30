@@ -1,4 +1,5 @@
 .page-footer {
+  background-color: #ffffff;
   padding: 40px 20px;
 }
 
@@ -25,4 +26,10 @@
   &--youtube {
     padding: 17px 16px 15px 19px;
   }
+}
+
+.page-footer__developer {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 55px;
 }

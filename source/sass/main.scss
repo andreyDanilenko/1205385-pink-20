@@ -6,24 +6,6 @@
   color: #ffffff;
 }
 
-/* фото */
-.heading__text-photo {
-  padding: 36px 20px 36px;
-}
-
-.photo {
-  background-color: #ffffff;
-  padding: 20px;
-}
-
-.photo__title {
-  padding: 34px 10px 30px;
-  font-size: 14px;
-  line-height: 30px;
-}
-
-/* фото */
-
 .software {
   background-color: #1d2631;
   color: #ffffff;
@@ -45,6 +27,11 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
+}
+
+.offer {
+   background-color: #ffffff;
+
 }
 
 .offer__question-answer {
@@ -76,4 +63,8 @@
 .offer__discription {
   font-size: 14px;
   font-weight: normal;
+}
+
+.offer__photo {
+  background-color: #f2f2f2;
 }
