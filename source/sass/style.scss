@@ -1,1 +1,18 @@
+@import "nullstyle.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "main.scss";
+@import "form.scss";
+@import "photo.scss";
+
 // Начните писать стили здесь
+.page__body {
+  text-align: center;
+  font-family: "Open sans", sans-serif;
+  background: url("/img/bg-back-mobile@1x.jpg") no-repeat;
+  background-size: 100%;
+}
+
+.visually-hidden {
+  display: none;
+}

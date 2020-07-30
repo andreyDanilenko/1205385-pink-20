@@ -4,39 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <title>Pink</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <a href="#" class="page-header__logo">
-        <img src="img/logotype-mobile.svg" width="74" height="23" alt="Пинк">
-      </a>
-    </div>
-
     <nav class="main-nav main-nav--hidden">
-      <button class="main-nav__toggle" type="button">
-        <span class="aria-label">Открыть меню</span>
-      </button>
+      <div class="page-header__wrapper">
+        <a href="#" class="page-header__logo">
+          <img src="img/logotype-mobile.svg" width="74" height="23" alt="Пинк">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="aria-label">Открыть меню</span>
+        </button>
+      </div>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="index.html">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">
+            <a class="site-list__link" href="photo.html">
               Фотографии
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__link" href="form.html">
               Конкурс
             </a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">
               HTML Academy
             </a>
           </li>
@@ -44,85 +45,84 @@
       </div>
     </nav>
   </header>
-
   <main class="page-main">
     <div class="heading">
-      <h1>Фотографии пользователей</h1>
+      <h1 class="heading__text-photo">Фотографии пользователей</h1>
     </div>
     <section class="photo">
-      <h2 class="photo__heading">Взгляните на фотографии, которые выкладывают пользователи!
+      <h2 class="photo__title">Взгляните на фотографии, которые выкладывают пользователи!
         Видите, как не хватает ваших?</h2>
       <ul class="photo__list">
         <li class="photo__item">
-          <figure class="photo__card-frame card-frame">
-            <img src="https://via.placeholder.com/150x150">
+          <figure class="photo__card-frame card-frame card-frame--prospect">
+            <img src="img/panorama-mobile@1x.jpg">
             <figcaption class="card-frame__comment">
-              <h3 class="card-frame__author">Анна<span>(5 минут назад)</span></h3>
+              <h3 class="card-frame__author">Анна <span class="card-frame__time">(5 минут назад)</span></h3>
               <p class="card-frame__text">Прыгать или нет? Напишите в
                 комментарии свой совет и
                 смотрите прямую трансляцию в
                 перископе, задавайте свои вопросы!</p>
-              <p class="card-frame__button--like button">Нравиться:<span>215</span></p>
+              <p class="card-frame__button card-frame__button--like button">Нравиться: <span>215</span></p>
             </figcaption>
           </figure>
         </li>
         <li class="photo__item">
           <figure class="photo__card-frame card-frame">
-            <img src="https://via.placeholder.com/150x150">
+            <img src="img/photo-car-mobile@1x.jpg">
             <figcaption class="card-frame__comment">
-              <h3 class="card-frame__author">Левон<span>(5 часов назад)</span></h3>
+              <h3 class="card-frame__author">Левон <span class="card-frame__time">(5 часов назад)</span></h3>
               <p class="card-frame__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <p class="card-frame__button--like button">Нравиться:<span>356</span></p>
+              <p class="card-frame__button card-frame__button--like button">Нравиться: <span>356</span></p>
             </figcaption>
           </figure>
         </li>
         <li class="photo__item">
           <figure class="photo__card-frame card-frame">
-            <img src="https://via.placeholder.com/150x150">
+            <img src="img/photo-drumset-mobile@1x.jpg">
             <figcaption class="card-frame__comment">
-              <h3 class="card-frame__author">Антон<span>(12 часов назад)</span></h3>
+              <h3 class="card-frame__author">Антон <span class="card-frame__time">(12 часов назад)</span></h3>
               <p class="card-frame__text">Соседи будут рады!</p>
-              <p class="card-frame__button--like button">Нравиться:<span>666</span></p>
+              <p class="card-frame__button card-frame__button--like button">Нравиться: <span>666</span></p>
             </figcaption>
           </figure>
         </li>
         <li class="photo__item">
           <figure class="photo__card-frame card-frame">
-            <img src="https://via.placeholder.com/150x150">
+            <img src="img/photo-window-mobile@1x.jpg">
             <figcaption class="card-frame__comment">
-              <h3 class="card-frame__author">Борис<span>(20 часов назад)</span></h3>
+              <h3 class="card-frame__author">Борис <span class="card-frame__time">(20 часов назад)</span></h3>
               <p class="card-frame__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <p class="card-frame__button--like button">Нравиться:<span>215</span></p>
+              <p class="card-frame__button card-frame__button--like button">Нравиться: <span>215</span></p>
             </figcaption>
           </figure>
         </li>
         <li class="photo__item">
           <figure class="photo__card-frame card-frame">
-            <img src="https://via.placeholder.com/150x150">
+            <img src="img/photo-fair-mobile@1x.jpg">
             <figcaption class="card-frame__comment">
-              <h3 class="card-frame__author">Сергей<span>(25 часов назад)</span></h3>
+              <h3 class="card-frame__author">Сергей <span class="card-frame__time">(25 часов назад)</span></h3>
               <p class="card-frame__text">Самая кубанская в мире!</p>
-              <p class="card-frame__button--like button">Нравиться:<span>4</span></p>
+              <p class="card-frame__button card-frame__button--like button">Нравиться: <span>4</span></p>
             </figcaption>
           </figure>
         </li>
         <li class="photo__item">
           <figure class="photo__card-frame card-frame">
-            <img src="https://via.placeholder.com/150x150">
+            <img src="img/photo-pov-mobile@1x.jpg">
             <figcaption class="card-frame__comment">
-              <h3 class="card-frame__author">Максим<span>(40 часов назад)</span></h3>
+              <h3 class="card-frame__author">Максим <span class="card-frame__time">(40 часов назад)</span></h3>
               <p class="card-frame__text">Где снег-то?</p>
-              <p class="card-frame__button--like button">Нравиться:<span>150</span></p>
+              <p class="card-frame__button card-frame__button--like button">Нравиться: <span>150</span></p>
             </figcaption>
           </figure>
         </li>
         <li class="photo__item">
           <figure class="photo__card-frame card-frame">
-            <img src="https://via.placeholder.com/150x150">
+            <img src="img/photo-wing-mobile@1x.jpg">
             <figcaption class="card-frame__comment">
-              <h3 class="card-frame__author">Надежда<span>(45 часов назад)</span></h3>
+              <h3 class="card-frame__author">Надежда <span class="card-frame__time">(45 часов назад)</span></h3>
               <p class="card-frame__text">Всем GM и взаимные лайки!</p>
-              <p class="card-frame__button--like button">Нравиться:<span>2560</span></p>
+              <p class="card-frame__button card-frame__button--like button">Нравиться: <span>2560</span></p>
             </figcaption>
           </figure>
         </li>
