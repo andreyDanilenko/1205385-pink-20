@@ -22,6 +22,12 @@
   color: #ffffff;
 }
 
+.software__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 38px 14px;
+}
+
 .software__text {
   padding: 17px 20px;
   font-weight: 300;
@@ -30,13 +36,14 @@
 }
 
 .offer {
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .offer__question-answer {
   font-weight: 300;
   font-size: 24px;
   padding: 23px 20px;
+  background-color: #ffffff;
 }
 
 .offer__question,
@@ -45,7 +52,6 @@
 }
 
 .offer__list {
-  background-color: #f2f2f2;
   padding: 68px 20px;
 }
 
@@ -64,6 +70,101 @@
   font-weight: normal;
 }
 
-.offer__photo {
+.reviews {
+  margin-top: -40px;
+  background-color: #ffffff;
+}
+
+.slider__toggle {
+  margin: 10px;
+}
+
+.reviews__wrapper {
+  padding: 20px;
+}
+
+.reviews__author-name {
+  padding: 30px 20px 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.reviews__text {
+  padding: 15px 0 15px;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.reviews__toggles {
+  padding: 20px 0 50px;
+}
+
+.price {
   background-color: #f2f2f2;
+}
+
+.properties__list {
+  margin: 0 auto;
+  width: 86%;
+}
+
+.properties__item {
+  text-align: start;
+  padding: 25px 20px;
+  margin-bottom: -1px;
+  background-color: #ffffff;
+
+  font-size: 13px;
+  border: 1px solid #e5e5e5;
+
+  &--title {
+    text-align: center;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 19px 20px 35px;
+    background: #283645;
+    border-top: #283645;
+    color: #ffffff;
+  }
+}
+
+.price__toggles {
+  padding: 50px 0 50px;
+}
+
+.contacts__title {
+  padding: 45px 20px 25px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.contacts__phone,
+.contacts__email,
+.contacts__address {
+  padding: 20px 20px 15px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 33px;
+
+  &--mobile,
+  &--address,
+  &--place {
+    font-weight: 300;
+    font-size: 24px;
+    color: #d22856;
+  }
+}
+
+.slider__toggle {
+  background-color: rgba(40, 54, 69, 0.3);
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+
+  &--current {
+    background: #ffffff;
+    box-shadow: 0 0 0 3px #283645;
+  }
 }
