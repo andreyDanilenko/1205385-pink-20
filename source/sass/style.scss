@@ -1,4 +1,3 @@
-@import "nullstyle.scss";
 @import "header.scss";
 @import "footer.scss";
 @import "main.scss";
@@ -7,6 +6,8 @@
 
 // Начните писать стили здесь
 .page__body {
+  margin: 0;
+  padding: 0;
   text-align: center;
   font-family: "Open sans", sans-serif;
   background: url("/img/bg-back-mobile@1x.jpg") no-repeat;

@@ -8,10 +8,16 @@
   display: none;
 }
 
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+}
+
 .site-list__link {
   display: block;
   font-size: 13px;
   padding: 25px 88px;
+  text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
   background: #283645;
