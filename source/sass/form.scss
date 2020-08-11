@@ -59,6 +59,7 @@
 
 .achievements__filter-act,
 .achievements__filter-soft {
+  border: none;
   padding: 20px;
   background-color: #f2f2f2;
 }
@@ -135,6 +136,7 @@
 }
 
 .comment__text {
+  box-sizing: border-box;
   padding: 20px;
   font-weight: normal;
   font-size: 18px;
