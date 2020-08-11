@@ -10,7 +10,8 @@
 }
 
 .achievements__title {
-  padding: 30px 20px;
+  margin: 0;
+  padding: 55px 20px 20px;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
@@ -18,6 +19,8 @@
 
 .achievements__list-initial,
 .achievements__list-contacts {
+  margin: 0;
+  list-style: none;
   padding: 20px 20px 44px;
 }
 
@@ -44,6 +47,7 @@
 .achievements__name-text,
 .achievements__phone-text,
 .achievements__email-text {
+  box-sizing: border-box;
   padding: 23px 20px;
   width: 100%;
   border: 2px solid #e5e5e5;
@@ -73,6 +77,13 @@
     display: block;
     padding-bottom: 10px;
   }
+}
+
+.filter-act__list,
+.filter-soft__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .filter-act__item,
