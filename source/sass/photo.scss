@@ -13,6 +13,7 @@
     max-width: 620px;
     margin: 0 auto;
   }
+
   @media (min-width: $desktop-width) {
     max-width: 1160px;
     margin: 0 auto;
@@ -40,8 +41,10 @@
 
 .photo__item {
   padding: 10px 0;
+
   @media (min-width: $tablet-width) {
     padding: 0;
+
     &--prospect {
       grid-column: 1/3;
     }
