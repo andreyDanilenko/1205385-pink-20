@@ -4,8 +4,19 @@
 }
 
 .photo {
-  background-color: #ffffff;
+  background: #ffffff;
   padding: 20px;
+}
+
+.photo__wrapper {
+  @media (min-width: $tablet-width) {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+  @media (min-width: $desktop-width) {
+    max-width: 1160px;
+    margin: 0 auto;
+  }
 }
 
 .photo__title {
@@ -19,10 +30,22 @@
 .photo__list {
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 }
 
 .photo__item {
   padding: 10px 0;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    &--prospect {
+      grid-column: 1/3;
+    }
+  }
 }
 
 .card-frame__comment {
@@ -72,6 +95,10 @@
   img {
     width: 100%;
   }
+}
+
+.photo__text {
+  padding: 30px 20px;
 }
 
 .picture__tuning {

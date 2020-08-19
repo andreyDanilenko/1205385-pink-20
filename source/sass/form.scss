@@ -48,6 +48,7 @@
 .achievements__phone-text,
 .achievements__email-text {
   box-sizing: border-box;
+  outline: none;
   padding: 23px 20px;
   width: 100%;
   border: 2px solid #e5e5e5;
@@ -137,6 +138,7 @@
 
 .comment__text {
   box-sizing: border-box;
+  outline: none;
   padding: 20px;
   font-weight: normal;
   font-size: 18px;
