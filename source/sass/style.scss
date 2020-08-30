@@ -10,8 +10,8 @@
 @import "blocks/software.scss";
 @import "blocks/photo.scss";
 @import "blocks/offer.scss";
+@import "blocks/effect.scss";
 
-// Начните писать стили здесь
 
 .page__body {
   margin: 0;
@@ -28,7 +28,3 @@
   height: 1px;
 }
 
-.triangle {
-  margin-top: -53px;
-  background-color: #f2f2f2;
-}

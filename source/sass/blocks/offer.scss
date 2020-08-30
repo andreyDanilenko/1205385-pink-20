@@ -1,5 +1,5 @@
 .offer-container {
-  background: #f2f2f2;
+  background: $gray;
 }
 
 .offer-wrapper {
@@ -8,7 +8,7 @@
   @media (min-width: $tablet-width) {
     max-width: 940px;
     margin: 0 auto;
-    padding: 0 20px 49px;
+    padding: 0 20px;
   }
 }
 
@@ -79,7 +79,7 @@
   @media (min-width: $desktop-width) {
     display: block;
     position: relative;
-    padding: 265px 20px 100px;
+    padding: 265px 33px 100px;
 
     &--phone-1 {
       &::before {
@@ -108,6 +108,7 @@
     }
 
     &--phone-3 {
+
       &::before {
         content: "";
         position: absolute;
