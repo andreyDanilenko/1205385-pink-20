@@ -1,0 +1,75 @@
+.post {
+  background-color: $gray;
+  padding: 20px 20px 41px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.photo__text {
+  padding: 30px 20px;
+}
+
+.picture__tuning {
+  display: flex;
+  justify-content: space-between;
+  padding: 43px 69px 20px 57px;
+}
+
+.picture__fill,
+.picture__crop,
+.picture__contrast {
+  display: block;
+
+  svg {
+    fill: rgba(40, 54, 69, 0.3);
+
+    &:hover {
+      fill: rgba(40, 54, 69, 0.5);
+    }
+
+    &:active {
+      fill: $cerise;
+    }
+  }
+}
+
+.picture__button {
+  padding: 18px 100px;
+  border: 3px solid $cerise;
+  color: $cerise;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 6px 0;
+
+  &--post {
+    padding: 18px 87px;
+
+    &:hover {
+      background-color: $cerise;
+      color: $white;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--cancel {
+    border: 3px solid rgba(40, 54, 69, 0.1);
+    color: rgba(40, 54, 69, 0.1);
+
+    &:hover {
+      border-color: rgba(40, 54, 69, 0.3);
+      color: rgba(40, 54, 69, 0.3);
+    }
+
+    &:active {
+      background-color: rgba(40, 54, 69, 0.3);
+      border-color: rgba(40, 54, 69, 0);
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
