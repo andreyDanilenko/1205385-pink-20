@@ -47,6 +47,8 @@
 }
 
 .effect__discription {
+  color: $midnight;
+
   @media (min-width: $tablet-width) {
     margin: 24px 0;
     font-weight: normal;

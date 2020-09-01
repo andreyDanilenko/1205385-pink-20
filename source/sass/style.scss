@@ -3,7 +3,6 @@
 @import "header.scss";
 @import "footer.scss";
 @import "index-main.scss";
-@import "form.scss";
 @import "photo-main.scss";
 @import "toggle.scss";
 @import "blocks/hero.scss";
@@ -11,7 +10,8 @@
 @import "blocks/photo.scss";
 @import "blocks/offer.scss";
 @import "blocks/effect.scss";
-
+@import "blocks/contact.scss";
+@import "blocks/achievements.scss";
 
 .page__body {
   margin: 0;

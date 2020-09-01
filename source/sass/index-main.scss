@@ -74,7 +74,7 @@
   background-color: $white;
 
   font-size: 13px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid $whisper;
 
   &--title {
     text-align: center;
@@ -85,30 +85,5 @@
     background: #283645;
     border-top: #283645;
     color: $white;
-  }
-}
-
-.contacts__title {
-  padding: 45px 20px 25px;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 120%;
-}
-
-.contacts__phone,
-.contacts__email,
-.contacts__address {
-  margin: 0;
-  padding: 20px 20px 15px;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 33px;
-
-  &--mobile,
-  &--address,
-  &--place {
-    font-weight: 300;
-    font-size: 24px;
-    color: $cerise;
   }
 }

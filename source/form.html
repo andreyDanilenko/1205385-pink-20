@@ -58,102 +58,110 @@
     </div>
     <section class="achievements">
       <h2 class="achievements__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
-        бонусную карту!</h2>
+        бонусную карту! <span class="achievements__request">Пожалуйста, заполните форму ниже:</span></h2>
       <form class="achievements__form" method="get" action="https://echo.htmlacademy.ru">
-        <ul class="achievements__list-initial">
-          <li class="achievements__item-initial">
-            <label class="achievements__name" for="surname-name">Фамилия:</label></br>
-            <input class="achievements__name-text" id="surname-name" type="text" placeholder="Укажите фамилию *"
-              required>
-          </li>
-          <li class="achievements__item-initial">
-            <label class="achievements__name" for="name-name">Имя:</label></br>
-            <input class="achievements__name-text" id="name-name" type="text" placeholder="Укажите ваше имя *" required>
-          </li>
-          <li class="achievements__item-initial">
-            <label class="achievements__name" for="patronymic-name">Отчество:</label></br>
-            <input class="achievements__name-text" id="patronymic-name" type="text" placeholder="Ну и отчество тоже">
-          </li>
-        </ul>
-        <fieldset class="achievements__filter-act filter-act">
-          <legend class="visually-hidden">Ваши безбашенные достижения в путешествии</legend>
-          <h2 class="filter-act__title">Ваши безбашенные достижения в путешествии</h2>
-          <ul class="filter-act__list">
-            <li class="filter-act__item">
-              <input class="visually-hidden filter-act__input filter-act__input--checkbox" type="checkbox" name="selfie"
-                id="filter-selfie" checked>
-              <label class="filter-act__label" for="filter-selfie">Сделал селфи с акулой</label>
+        <div class="achievements__form-wrapper">
+          <ul class="achievements__list-initial">
+            <li class="achievements__item-initial">
+              <label class="achievements__name" for="surname-name">Фамилия:</label>
+              <input class="achievements__name-text" id="surname-name" type="text" placeholder="Укажите фамилию *"
+                required>
             </li>
-            <li class="filter-act__item">
-              <input class="visually-hidden filter-act__input filter-act__input--checkbox" type="checkbox" name="tanned"
-                id="filter-tanned" checked>
-              <label class="filter-act__label" for="filter-tanned">Обгорел на пляже</label>
+            <li class="achievements__item-initial">
+              <label class="achievements__name" for="name-name">Имя:</label>
+              <input class="achievements__name-text" id="name-name" type="text" placeholder="Укажите ваше имя *"
+                required>
             </li>
-            <li class="filter-act__item">
-              <input class="visually-hidden filter-act__input filter-act__input--checkbox" type="checkbox" name="chuck"
-                id="filter-chuck">
-              <label class="filter-act__label" for="filter-chuck">Видел Чака Норриса</label>
-            </li>
-            <li class="filter-act__item">
-              <input class="visually-hidden filter-act__input filter-act__input--checkbox" type="checkbox"
-                name="purchases" id="filter-purchases">
-              <label class="filter-act__label" for="filter-purchases">Накупил сувениров</label>
-            </li>
-            <li class="filter-act__item">
-              <input class="visually-hidden filter-act__input filter-act__input--checkbox" type="checkbox"
-                name="originality" id="filter-originality" checked>
-              <label class="filter-act__label" for="filter-originality">Удержал башню</label>
-            </li>
-            <li class="filter-act__item">
-              <input class="visually-hidden filter-act__input filter-act__input--checkbox" type="checkbox" name="norms"
-                id="filter-norms">
-              <label class="filter-act__label" for="filter-norms">Разгромил отель</label>
+            <li class="achievements__item-initial">
+              <label class="achievements__name" for="patronymic-name">Отчество:</label>
+              <input class="achievements__name-text" id="patronymic-name" type="text" placeholder="Ну и отчество тоже">
             </li>
           </ul>
-        </fieldset>
-        <ul class="achievements__list-contacts">
-          <li class="achievements__item-contacts">
-            <label class="achievements__phone" for="phone">Номер телефона</label></br>
-            <input class="achievements__phone-text" id="phone" type="tel" placeholder="Номер, пожалуйста">
-          </li>
-          <li class="achievements__item-email">
-            <label class="achievements__email" for="email">Адрес почты</label></br>
-            <input class="achievements__email-text" id="email" type="email" placeholder="Введите почту *" required>
-          </li>
-        </ul>
-        <fieldset class="achievements__filter-soft filter-soft">
-          <legend class="visually-hidden">С каким приложением путешествовали?</legend>
-          <h2 class="filter-soft__title">С каким приложением путешествовали?</h2>
-          <ul class="filter-soft__list">
-            <li class="filter-soft__item">
-              <input class="visually-hidden filter__soft-input filter__soft-input--radio" type="radio" name="soft-group"
-                value="ios" id="filter-ios" checked>
-              <label class="filter-soft__label" for="filter-ios">Pink для iOS</label>
-            </li>
-            <li class="filter-soft__item">
-              <input class="visually-hidden filter__soft-input filter__soft-input--radio" type="radio" name="soft-group"
-                value="android" id="filter-android">
-              <label class="filter-soft__label" for="filter-android">Pink на Android</label>
-            </li>
-            <li class="filter-soft__item">
-              <input class="visually-hidden filter__soft-input filter__soft-input--radio" type="radio" name="soft-group"
-                value="windows" id="filter-windows">
-              <label class="filter-soft__label" for="filter-windows">Windows Phone</label>
-            </li>
-          </ul>
-        </fieldset>
+          <fieldset class="achievements__filter-act filter-act">
+            <legend class="filter-act__title-legend">Ваши безбашенные достижения в путешествии</legend>
+            <h2 class="filter-act__title">Ваши безбашенные достижения в путешествии</h2>
+            <ul class="filter-act__list">
+              <li class="filter-act__item filter-act__item--selfie">
+                <input class="visually-hidden filter-act__input filter-act__input--checkbox" type="checkbox"
+                  name="selfie" id="filter-selfie" checked>
+                <label class="filter-act__label filter-act__label--selfie" for="filter-selfie">Сделал селфи с акулой</label>
+              </li>
+              <li class="filter-act__item  filter-act__item--tanned">
+                <input class="visually-hidden filter-act__input filter-act__input--checkbox" type="checkbox"
+                  name="tanned" id="filter-tanned" checked>
+                <label class="filter-act__label filter-act__label--tanned" for="filter-tanned">Обгорел на пляже</label>
+              </li>
+              <li class="filter-act__item filter-act__item--chuck">
+                <input class="visually-hidden filter-act__input filter-act__input--checkbox" type="checkbox"
+                  name="chuck" id="filter-chuck">
+                <label class="filter-act__label filter-act__label--chuck" for="filter-chuck">Видел Чака Норриса</label>
+              </li>
+              <li class="filter-act__item  filter-act__item--purchases">
+                <input class="visually-hidden filter-act__input filter-act__input--checkbox" type="checkbox"
+                  name="purchases" id="filter-purchases">
+                <label class="filter-act__label filter-act__label--purchases" for="filter-purchases">Накупил сувениров</label>
+              </li>
+              <li class="filter-act__item  filter-act__item--originality">
+                <input class="visually-hidden filter-act__input filter-act__input--checkbox" type="checkbox"
+                  name="originality" id="filter-originality" checked>
+                <label class="filter-act__label filter-act__label--originality" for="filter-originality">Удержал башню</label>
+              </li>
+              <li class="filter-act__item  filter-act__item--norms">
+                <input class="visually-hidden filter-act__input filter-act__input--checkbox" type="checkbox"
+                  name="norms" id="filter-norms">
+                <label class="filter-act__label filter-act__label--norms" for="filter-norms">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="achievements__contacts">
+            <legend class="achievements__title-contacts">Контактная информация</legend>
+            <ul class="achievements__list-contacts">
+              <li class="achievements__item-contacts">
+                <label class="achievements__phone" for="phone">Номер телефона</label>
+                <input class="achievements__phone-text" id="phone" type="tel" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="achievements__item-email">
+                <label class="achievements__email" for="email">Адрес почты</label>
+                <input class="achievements__email-text" id="email" type="email" placeholder="Введите почту *" required>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="achievements__filter-soft filter-soft">
+            <legend class="filter-act__title-legend">С каким приложением путешествовали?</legend>
+            <h2 class="filter-soft__title">С каким приложением путешествовали?</h2>
+            <ul class="filter-soft__list">
+              <li class="filter-soft__item">
+                <input class="visually-hidden filter__soft-input filter__soft-input--radio" type="radio"
+                  name="soft-group" value="ios" id="filter-ios" checked>
+                <label class="filter-soft__label" for="filter-ios">Pink для iOS</label>
+              </li>
+              <li class="filter-soft__item">
+                <input class="visually-hidden filter__soft-input filter__soft-input--radio" type="radio"
+                  name="soft-group" value="android" id="filter-android">
+                <label class="filter-soft__label" for="filter-android">Pink на Android</label>
+              </li>
+              <li class="filter-soft__item">
+                <input class="visually-hidden filter__soft-input filter__soft-input--radio" type="radio"
+                  name="soft-group" value="windows" id="filter-windows">
+                <label class="filter-soft__label" for="filter-windows">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <div class="achievements__comment comment">
-          <label class="comment__heading comment__heading--current" for="comment">Опишите свои эмоции</label></br>
+          <h2 class="achievements__comment-title">Опишите свои эмоции</h2>
+          <label class="comment__heading comment__heading--current" for="comment">Опишите свои эмоции</label>
           <textarea class="comment__text comment__text--window" name="comment" id="comment"
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </div>
-        <button type="submit" class="button achievements__button">Отправить форму</button>
-        <p class="filter__legend">
-          <small>
-            * — обязательные поля
-          </small>
-        </p>
-
+        <div class="achievements__button-wrapper">
+          <button type="submit" class="button achievements__button">Отправить форму</button>
+          <p class="filter__legend">
+            <small>
+              <span class="filter__star">*</span> — обязательные <span class="filter__hidden">для заполнения</span> поля
+            </small>
+          </p>
+        </div>
       </form>
     </section>
   </main>
