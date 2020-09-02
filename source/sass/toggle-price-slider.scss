@@ -1,0 +1,134 @@
+.slider__toggle {
+  padding: 0;
+  border: none;
+  margin: 10px;
+  background-color: rgba(40, 54, 69, 0.3);
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+
+  &--current {
+    background: $white;
+    box-shadow: 0 0 0 3px $midnight;
+  }
+}
+
+.reviews__toggles,
+.price__toggles {
+  margin: 0;
+  padding: 45px 0;
+}
+
+.price__toggles {
+  padding-bottom: 65px;
+}
+
+.reviews {
+  position: relative;
+  margin-top: -40px;
+  background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+
+.reviews__wrapper {
+  padding: 20px;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews__author-info {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.reviews__author-name {
+  padding: 30px 20px 15px;
+  font-weight: bold;
+  font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.reviews__text {
+  padding: 15px 0 15px;
+  font-size: 14px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+    padding: 100px 100px 40px;
+  }
+}
+
+.reviews__author-id {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0;
+    padding: 0;
+    order: -1;
+    font-size: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.price {
+  background-color: $gray;
+}
+
+.price__item {
+  padding: 20px;
+}
+
+.properties__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  width: 86%;
+}
+
+.properties__item {
+  text-align: start;
+  padding: 25px 20px;
+  margin-bottom: -1px;
+  background-color: $white;
+
+  font-size: 13px;
+  border: 1px solid $whisper;
+
+  &--title {
+    text-align: center;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 19px 20px 35px;
+    background: $midnight;
+    border-top: $midnight;
+    color: $white;
+  }
+}

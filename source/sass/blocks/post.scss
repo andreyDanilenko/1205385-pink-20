@@ -1,0 +1,172 @@
+.post {
+  padding: 20px 20px 41px;
+  background-color: $gray;
+}
+
+.post__picture {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+.picture__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 50%;
+  }
+}
+
+.picture__tuning-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+img {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.picture__tuning {
+  display: flex;
+  justify-content: space-between;
+  padding: 43px 69px 20px 57px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+}
+
+.picture__fill,
+.picture__crop,
+.picture__contrast {
+  display: block;
+
+  svg {
+    fill: rgba(40, 54, 69, 0.3);
+
+    &:hover {
+      fill: rgba(40, 54, 69, 0.5);
+    }
+
+    &:active {
+      fill: $cerise;
+    }
+  }
+}
+
+.picture__button-container {
+  padding: 60px 0 41px;
+}
+
+.picture__button {
+  padding: 18px 100px;
+  border: 3px solid $cerise;
+  color: $cerise;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 6px 0;
+
+  &--post {
+    padding: 18px 87px;
+
+    &:hover {
+      background-color: $cerise;
+      color: $white;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--cancel {
+    border: 3px solid rgba(40, 54, 69, 0.1);
+    color: rgba(40, 54, 69, 0.1);
+
+    &:hover {
+      border-color: rgba(40, 54, 69, 0.3);
+      color: rgba(40, 54, 69, 0.3);
+    }
+
+    &:active {
+      background-color: rgba(40, 54, 69, 0.3);
+      border-color: rgba(40, 54, 69, 0);
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+.picture__range {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.range__controls {
+  position: relative;
+  background-color: $midnight;
+  margin: 20px auto;
+  width: 260px;
+  height: 2px;
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+  }
+
+  &--fill {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--contrast {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+}
+
+.range__toggle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid $cerise;
+  width: 10px;
+  height: 10px;
+  right: 40px;
+  top: -6px;
+
+  &--fill {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--contrast {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+}
