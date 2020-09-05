@@ -1,18 +1,20 @@
 .post {
-  padding: 20px 20px 41px;
   background-color: $gray;
+  max-width: 940px;
+  margin: 0 auto;
 }
 
 .post__picture {
+  padding: 20px 20px 41px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    padding: 54px 20px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 940px;
-    margin: 0 auto;
-    padding: 0 20px;
+    padding: 54px 80px;
   }
 }
 
@@ -28,13 +30,13 @@
     display: flex;
     justify-content: space-between;
   }
-}
 
-img {
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
+  img {
     width: 100%;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
   }
 }
 
@@ -46,6 +48,10 @@ img {
   @media (min-width: $tablet-width) {
     flex-direction: column-reverse;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 44px;
   }
 }
 
@@ -69,6 +75,13 @@ img {
 
 .picture__button-container {
   padding: 60px 0 41px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 128px;
+  }
 }
 
 .picture__button {
@@ -108,6 +121,14 @@ img {
       color: rgba(255, 255, 255, 0.3);
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 18px 55px;
+
+    &--post {
+      padding: 21px 42px;
+    }
+  }
 }
 
 .picture__range {
@@ -125,6 +146,11 @@ img {
 
   @media (min-width: $tablet-width) {
     width: 202px;
+    margin: 35px auto;
+
+    &--crop {
+      margin-top: 15px;
+    }
   }
 
   &--fill {
@@ -141,6 +167,10 @@ img {
     @media (min-width: $tablet-width) {
       display: block;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
   }
 }
 
