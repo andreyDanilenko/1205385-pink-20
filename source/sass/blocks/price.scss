@@ -5,7 +5,7 @@
 .price__wrapper {
   max-width: 940px;
   margin: 0 auto;
-  padding: 20px;
+  padding-top: 100px;
 
   @media (min-width: $tablet-width) {
     padding: 70px 20px;
@@ -13,6 +13,13 @@
 
   @media (min-width: $desktop-width) {
     padding: 98px 20px;
+  }
+}
+
+.slider__table {
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+    overflow: hidden;
   }
 }
 
