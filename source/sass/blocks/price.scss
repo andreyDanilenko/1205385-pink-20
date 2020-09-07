@@ -1,0 +1,136 @@
+.price {
+  background-color: $gray;
+}
+
+.price__wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 70px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 98px 20px;
+  }
+}
+
+.price__table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.price__cell-head {
+  background-color: $midnight;
+  color: $white;
+  border: none;
+  padding: 19px 20px 35px;
+  min-width: 236px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 113px;
+    padding: 19px 20px 16px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 193px;
+    padding: 23px 20px 25px;
+  }
+
+  &:nth-child(2) {
+    border-radius: 3px 0 0 0;
+    border-right: 2px solid $whisper;
+  }
+
+  &:nth-child(4) {
+    border-radius: 0 3px 0 0;
+    border-left: 2px solid $whisper;
+  }
+}
+
+.price__cell-cost {
+  display: block;
+  font-weight: 300;
+  font-size: 18px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.price__cell--empty {
+  border: none;
+  background: none;
+}
+
+.price__cell {
+  position: relative;
+  border: 2px solid $whisper;
+  background-color: $white;
+  text-align: start;
+  text-transform: uppercase;
+  padding: 20px 20px;
+  font-size: 14px;
+  color: $midnight;
+
+  @media (min-width: $tablet-width) {
+    padding: 12px 15px;
+    text-transform: initial;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 16px 22px;
+    font-size: 18px;
+  }
+
+  &--hidden {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+  }
+}
+
+.price__cell-text {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.price__cell-yes {
+  position: absolute;
+  top: 18px;
+  right: 17px;
+  fill: $shamrock;
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 15px;
+    right: 100px;
+  }
+}
+
+.price__cell-no {
+  position: absolute;
+  top: 18px;
+  right: 17px;
+  fill: $red-orange;
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 15px;
+    right: 100px;
+  }
+}

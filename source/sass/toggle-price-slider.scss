@@ -21,6 +21,10 @@
 
 .price__toggles {
   padding-bottom: 65px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .reviews {
@@ -94,41 +98,5 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
-  }
-}
-
-.price {
-  background-color: $gray;
-}
-
-.price__item {
-  padding: 20px;
-}
-
-.properties__list {
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-  width: 86%;
-}
-
-.properties__item {
-  text-align: start;
-  padding: 25px 20px;
-  margin-bottom: -1px;
-  background-color: $white;
-
-  font-size: 13px;
-  border: 1px solid $whisper;
-
-  &--title {
-    text-align: center;
-    line-height: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 19px 20px 35px;
-    background: $midnight;
-    border-top: $midnight;
-    color: $white;
   }
 }
