@@ -328,6 +328,19 @@
   }
 }
 
+.filter-act__input + .filter-act__label .achievements__icon-yes {
+  display: none;
+}
+
+.filter-act__input + .filter-act__label:active .achievements__icon-yes,
+.filter-act__input:checked + .filter-act__label .achievements__icon-yes {
+  position: absolute;
+  display: block;
+  top: 7px;
+  left: -50px;
+  fill: $cerise;
+}
+
 .filter-soft__label {
   position: relative;
   cursor: pointer;
