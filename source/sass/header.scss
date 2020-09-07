@@ -40,7 +40,7 @@
 .page-header__wrapper {
   text-align: start;
   padding: 24px 20px;
-  background: #283645;
+  background: $midnight;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
   @media (min-width: $tablet-width) {
@@ -59,6 +59,10 @@
   padding: 0;
   margin: 0;
   border-bottom: 1px solid #000000;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -81,7 +85,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $white;
-  background: #283645;
+  background: $midnight;
   box-shadow: inset 0 1px 0 #000000, inset 0 2px 0 rgba(255, 255, 255, 0.15);
 
   &:hover {
