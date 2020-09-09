@@ -27,6 +27,12 @@
   }
 }
 
+.reviews__toggles {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .reviews {
   position: relative;
   margin-top: -40px;
@@ -40,7 +46,7 @@
 }
 
 .reviews__wrapper {
-  padding: 20px;
+  padding: 20px 20px 160px;
   position: relative;
 }
 
