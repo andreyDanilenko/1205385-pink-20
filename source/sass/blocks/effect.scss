@@ -15,6 +15,12 @@
 }
 
 .effect__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 940px;
     margin: 0 auto;
@@ -22,11 +28,66 @@
   }
 }
 
+.effect__timer {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+.effect__timer-icon {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+
+    &--1 {
+      top: 38px;
+      left: 0;
+      fill: $gray-2;
+
+      @media (min-width: $desktop-width) {
+        top: -85px;
+        width: 298px;
+        height: 345px;
+      }
+    }
+
+    &--2 {
+      top: 94px;
+      left: 18px;
+      fill: $cerise;
+
+      @media (min-width: $desktop-width) {
+        width: 252px;
+        height: 252px;
+        top: -16px;
+        left: 23px;
+      }
+    }
+  }
+}
+
+.effect__timer-text {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 94px;
+    font-size: 96px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-left: 64px;
+    color: $cerise;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 81px;
+    padding-top: 20px;
+    font-size: 120px;
+    margin: 0;
+  }
+}
+
 .effect__text {
   @media (min-width: $tablet-width) {
     position: relative;
     width: 50%;
-    margin: 0 0 0 auto;
     text-align: start;
     padding: 100px 0 150px;
   }
