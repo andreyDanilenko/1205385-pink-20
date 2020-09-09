@@ -41,6 +41,7 @@
 
 .reviews__wrapper {
   padding: 20px;
+  position: relative;
 }
 
 .reviews__quotes {
@@ -49,6 +50,30 @@
 
   @media (max-width: $mobile-width-only) {
     display: none;
+  }
+}
+
+.reviews__left {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    display: block;
+    top: 220px;
+    left: 0;
+    fill: rgba(40, 54, 69, 0.3);
+  }
+}
+
+.reviews__right {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    display: block;
+    top: 220px;
+    right: 0;
+    fill: rgba(40, 54, 69, 0.3);
   }
 }
 
