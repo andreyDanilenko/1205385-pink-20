@@ -65,7 +65,8 @@
 
 .achievements__list-initial {
   @media (min-width: $desktop-width) {
-    margin-top: 0;
+    margin-top: 20px;
+    width: 46%;
   }
 }
 
@@ -74,6 +75,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 20px 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 11px 0;
   }
 }
 
@@ -123,12 +130,22 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column-reverse;
+    position: relative;
+
+    @media (min-width: $desktop-width) {
+      flex-grow: 1;
+      padding: 10px 37px;
+    }
   }
 }
 
 .achievements__item-contacts {
   @media (min-width: $tablet-width) {
     margin-top: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -143,7 +160,7 @@
 
 .achievements__name {
   @media (min-width: $tablet-width) {
-    padding: 20px 20px 20px 0;
+    padding: 5px 20px 5px 0;
   }
 }
 
@@ -153,17 +170,59 @@
   box-sizing: border-box;
   outline: none;
   width: 100%;
-  padding: 23px 20px;
+  padding: 13px 20px;
   border: 2px solid $whisper;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
   color: $midnight;
+
+  &:hover {
+    border-color: $midnight;
+  }
+
+  &:active {
+    border-color: $cerise;
+  }
 }
 
-.achievements__name-text {
+.achievements__phone-text,
+.achievements__email-text {
+  @media (min-width: $tablet-width) {
+    box-shadow: inset -59px 0 0 $whisper;
+    padding-right: 59px;
+  }
+}
+
+.achievements__phone-icon {
+  display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
+    position: absolute;
+    top: 32px;
+    right: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 32px;
+    right: 58px;
+  }
+}
+
+.achievements__email-icon {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    top: 34px;
+    right: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 34px;
+    right: 58px;
   }
 }
 
@@ -192,6 +251,8 @@
 .achievements__filter-soft {
   @media (min-width: $desktop-width) {
     margin-top: -13px;
+    padding: 25px 0 25px 70px;
+    width: 38%;
   }
 }
 
@@ -268,7 +329,7 @@
     overflow: initial;
     width: auto;
     height: auto;
-    padding: 0 30px;
+    padding: 0 10px;
   }
 }
 
@@ -311,7 +372,13 @@
   }
 }
 
-.filter-act__label {
+.filter-soft__item {
+  @media (min-width: $desktop-width) {
+    padding: 25px 20px 25px 56px;
+  }
+}
+
+.filter-act__input + .filter-act__label {
   position: relative;
   cursor: pointer;
 
@@ -341,7 +408,7 @@
   fill: $cerise;
 }
 
-.filter-soft__label {
+.filter__soft-input + .filter-soft__label {
   position: relative;
   cursor: pointer;
 
@@ -356,6 +423,27 @@
     border: 2px solid $whisper;
     border-radius: 50%;
   }
+}
+
+.filter-act__label:hover::before,
+.filter-soft__label:hover::before {
+  border-color: $midnight;
+}
+
+.filter-act__label:active::before,
+.filter-soft__label:active::before {
+  border-color: $cerise;
+}
+
+.filter__soft-input:checked + .filter-soft__label::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: -48px;
+  top: 8px;
+  background-color: #d22856;
+  border-radius: 50%;
 }
 
 .achievements__comment {
@@ -412,16 +500,27 @@
 }
 
 .achievements__button {
+  cursor: pointer;
   padding: 20px 43px;
   margin: 52px 0 23px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  background-color: #2aab6d;
-  border: 2px solid #2aab6d;
+  background-color: $green-1;
+  border: 2px solid $green-1;
   border-radius: 3px;
   color: $white;
+  outline: none;
+
+  &:hover {
+    background-color: $green-2;
+    border-color: $green-2;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     padding: 20px 53px;

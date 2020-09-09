@@ -43,6 +43,15 @@
   padding: 20px;
 }
 
+.reviews__quotes {
+  fill: $gray-3;
+  padding-top: 50px;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
 .reviews__list {
   margin: 0;
   padding: 0;
@@ -81,7 +90,7 @@
     font-size: 18px;
     line-height: 30px;
     margin: 0;
-    padding: 100px 100px 40px;
+    padding: 50px 100px 40px;
   }
 }
 

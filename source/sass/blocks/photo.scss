@@ -16,7 +16,25 @@
 
 .prospect__photo,
 .card-frame__img {
+  position: relative;
   margin-bottom: -5px;
+}
+
+.prospect__day {
+  position: absolute;
+  font-size: 12px;
+  padding: 6px 22px;
+  text-transform: uppercase;
+  background-color: $cerise;
+  color: $white;
+  z-index: 100;
+  top: 10vh;
+  right: 5vw;
+
+  @media (min-width: $desktop-width) {
+    top: 10vh;
+    right: 15vw;
+  }
 }
 
 .photo__title {
