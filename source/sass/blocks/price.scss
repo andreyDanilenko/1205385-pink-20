@@ -30,6 +30,7 @@
 
 .price__cell-head {
   background-color: $midnight;
+  position: relative;
   color: $white;
   border: none;
   padding: 19px 20px 35px;
@@ -37,6 +38,7 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 16px;
+  z-index: 100;
 
   @media (min-width: $tablet-width) {
     min-width: 113px;
@@ -58,6 +60,12 @@
     border-radius: 0 3px 0 0;
     border-left: 2px solid $whisper;
   }
+}
+
+.price__cell-view {
+  position: relative;
+  font-weight: bold;
+  z-index: 120;
 }
 
 .price__cell-cost {
@@ -99,6 +107,47 @@
     @media (max-width: $mobile-width-only) {
       display: none;
     }
+  }
+}
+
+.price__cell-hit {
+  position: absolute;
+  background: url("/img/bg-hit.svg") no-repeat 0 0;
+  width: 74px;
+  height: 74px;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    background: url("/img/bg-hit-tablet.svg") no-repeat 0 0;
+    width: 59px;
+    height: 59px;
+    z-index: 110;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("/img/bg-hit.svg") no-repeat 0 0;
+    width: 74px;
+    height: 74px;
+  }
+}
+
+.price__cell-hit-text {
+  position: absolute;
+  font-weight: normal;
+  font-size: 16px;
+  transform: rotate(-45deg);
+  top: 15px;
+  left: 11px;
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    left: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 15px;
+    left: 11px;
   }
 }
 
