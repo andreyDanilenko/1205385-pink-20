@@ -29,3 +29,166 @@
   width: 1px;
   height: 1px;
 }
+
+.modal-failure {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: fixed;
+    background-color: $white;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+    border-radius: 5px;
+    top: 5%;
+    left: 50%;
+    max-width: 300px;
+    margin-left: -230px;
+    padding: 50px 80px 55px;
+    z-index: 100000;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    top: 20%;
+    max-width: 780px;
+    margin-left: -380px;
+  }
+}
+
+.modal-failure__title {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.modal-failure__description {
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+}
+
+.modal-failure__text {
+  @media (min-width: $desktop-width) {
+    padding: 41px 210px;
+  }
+}
+
+.modal-failure__button-wrapper {
+  @media (min-width: $desktop-width) {
+    padding: 52px 242px;
+    background: $gray;
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+.modal-failure__button {
+  cursor: pointer;
+  padding: 20px 135px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: $green-1;
+  border: 2px solid $green-1;
+  border-radius: 3px;
+  color: $white;
+  outline: none;
+
+  &:hover {
+    background-color: $green-2;
+    border-color: $green-2;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.modal-succes {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: fixed;
+    background-color: $white;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+    border-radius: 5px;
+    top: 5%;
+    left: 50%;
+    max-width: 460px;
+    margin-left: -230px;
+    padding: 0;
+    z-index: 100000;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 20%;
+    max-width: 780px;
+    margin-left: -380px;
+  }
+}
+
+.modal-sicess__title {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0;
+  }
+}
+
+.modal-succes__description {
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin: 0;
+  }
+}
+
+.modal-succes__text {
+  @media (min-width: $tablet-width) {
+    padding: 30px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 190px 41px;
+  }
+}
+
+.modal-succes__button-wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 52px 82px;
+    background: $gray;
+    border-radius: 0 0 5px 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 52px 152px;
+  }
+}
+
+.modal-succes__button {
+  cursor: pointer;
+  padding: 20px 70px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: $green-1;
+  border: 2px solid $green-1;
+  border-radius: 3px;
+  color: $white;
+  outline: none;
+
+  @media (min-width: $desktop-width) {
+    padding: 18px 156px;
+  }
+
+  &:hover {
+    background-color: $green-2;
+    border-color: $green-2;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
