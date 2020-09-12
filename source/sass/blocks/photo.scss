@@ -101,9 +101,39 @@
     padding: 30px 27px 67px;
   }
 
-  &--color {
+  &--panorama {
     position: relative;
     background: $gray;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 32px;
+    }
+  }
+}
+
+.card-frame-heart {
+  position: absolute;
+  fill: $cerise;
+  bottom: 33px;
+  left: 17px;
+
+  @media (min-width: $tablet-width) {
+    top: auto;
+    bottom: 33px;
+    left: auto;
+    right: 30px;
+  }
+
+  &--panorama {
+    bottom: 33px;
+    left: 17px;
+
+    @media (min-width: $tablet-width) {
+      top: 37px;
+      bottom: auto;
+      left: auto;
+      right: 30px;
+    }
   }
 }
 
@@ -140,7 +170,7 @@
   position: absolute;
   margin: 0;
   bottom: 26px;
-  left: 17px;
+  left: 48px;
   font-size: 12px;
   margin-top: 14px;
   color: $cerise;
@@ -158,4 +188,21 @@
 
 .photo__text {
   padding: 30px 20px;
+}
+
+.panorama__button {
+  position: absolute;
+  margin: 0;
+  bottom: 26px;
+  left: 48px;
+  font-size: 12px;
+  margin-top: 14px;
+  color: $cerise;
+
+  @media (min-width: $tablet-width) {
+    top: 18px;
+    bottom: auto;
+    left: auto;
+    right: 59px;
+  }
 }
