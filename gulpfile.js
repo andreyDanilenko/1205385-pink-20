@@ -14,7 +14,7 @@ const del = require("del");
 const htmlMinimizer = require("gulp-html-minimizer");
 const terser = require("gulp-terser");
 
-// Styles
+
 
 const styles = () => {
   return gulp.src("source/sass/style.scss")
