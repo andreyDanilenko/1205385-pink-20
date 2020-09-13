@@ -1,11 +1,12 @@
 .map {
   position: relative;
   background-image: url("/img/bg-map-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: 100%;
+  background-size: cover;
+
   min-height: 200px;
-  margin-top: 20px;
+  background-repeat: no-repeat;
+
+
 
   @media (min-width: $tablet-width) {
     background-image: url("/img/bg-map-tablet@1x.jpg");
