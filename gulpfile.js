@@ -1,7 +1,7 @@
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
-const less = require("gulp-less");
+const scss = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
@@ -13,13 +13,14 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const htmlMinimizer = require("gulp-html-minimizer");
 const terser = require("gulp-terser");
+
 // Styles
 
 const styles = () => {
-  return gulp.src("source/less/style.less")
+  return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(less())
+    .pipe(scss())
     .pipe(postcss([
       autoprefixer()
     ]))
@@ -31,10 +32,10 @@ const styles = () => {
 exports.styles = styles;
 
 const stylesMin = () => {
-  return gulp.src("source/less/style.less")
+  return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(less())
+    .pipe(scss())
     .pipe(postcss([
       autoprefixer()
     ]))
@@ -74,8 +75,8 @@ const watcher = () => {
     notify: false,
     ui: false,
   });
-  gulp.watch("source/less/**/*.less", gulp.series("styles"));
-  gulp.watch("source/less/**/*.less", gulp.series("stylesMin"));
+  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/sass/**/*.scss", gulp.series("stylesMin"));
   gulp.watch("source/*.html", gulp.series("html")).on("change", sync.reload);
   gulp.watch("source/js/*.js", gulp.series("scripts")).on("change", sync.reload);
 };
@@ -85,11 +86,11 @@ const watcher = () => {
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
-      imagemin.optipng({ optimizationLevel: 3 }),
-      imagemin.mozjpeg({ quality: 75, progressive: true }),
-      imagemin.svgo({
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.mozjpeg({quality: 75, progressive: true}),
+      imagemin.svgo({ // оптимизируем svg
         plugins: [
-          { cleanupIDs: false }
+          {cleanupIDs: false}
         ]
       })
     ]))
@@ -101,7 +102,7 @@ exports.images = images;
 
 const createWebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({ quality: 90 }))
+    .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img"))
 }
 
@@ -127,7 +128,7 @@ const copy = () => {
     "source/img/**",
     "source/js/**",
     "source/*.ico"
-  ], {
+  ],  {
     base: "source"
   })
     .pipe(gulp.dest("build"));
@@ -147,7 +148,7 @@ exports.clean = clean;
 
 const html = () => {
   return gulp.src("source/*.html")
-    .pipe(htmlMinimizer({ collapseWhitespace: true }))
+    .pipe(htmlMinimizer({collapseWhitespace: true}))
     .pipe(gulp.dest("build"))
 };
 
@@ -186,5 +187,6 @@ exports.build = build;
 //Default
 
 exports.default = gulp.series(
+  build,
   watcher
 );
