@@ -2,6 +2,15 @@
   background: $gray;
 }
 
+.offer__container::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 160px;
+  background-image: url("img/bg-triangle-white.svg");
+  background-size: cover;
+}
+
 .offer__wrapper {
   position: relative;
 
@@ -15,7 +24,7 @@
 .offer__question-answer {
   font-weight: 300;
   font-size: 24px;
-  padding: 23px 80px;
+  padding: 10px 20px;
   background-color: $white;
   color: $midnight;
 
@@ -35,7 +44,7 @@
 .offer__question,
 .offer__answer {
   margin: 0;
-  padding: 23px 0;
+  padding: 12px 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
