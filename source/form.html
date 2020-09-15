@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
 
@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body class="page__body">
+<body class="page">
   <header class="page-header">
     <nav class="main-nav main-nav--hidden main-nav--closed main-nav--nojs">
       <div class="page-header__wrapper">
@@ -273,23 +273,23 @@
             </ul>
           </fieldset>
           <fieldset class="achievements__filter-soft filter-soft">
-            <legend class="filter-act__title-legend">С каким приложением путешествовали?</legend>
+            <legend class="filter-soft__title-legend">С каким приложением путешествовали?</legend>
             <h2 class="filter-soft__title">С каким приложением путешествовали?</h2>
             <ul class="filter-soft__list">
               <li class="filter-soft__item">
-                <input class="visually-hidden filter__soft-input filter__soft-input--radio" type="radio"
+                <input class="visually-hidden filter-soft__input filter-soft__input--radio" type="radio"
                   name="soft-group" value="ios" id="filter-ios" checked>
                 <label class="filter-soft__label" for="filter-ios">
                   Pink для iOS</label>
               </li>
               <li class="filter-soft__item">
-                <input class="visually-hidden filter__soft-input filter__soft-input--radio" type="radio"
+                <input class="visually-hidden filter-soft__input filter-soft__input--radio" type="radio"
                   name="soft-group" value="android" id="filter-android">
                 <label class="filter-soft__label" for="filter-android">
                   Pink на Android</label>
               </li>
               <li class="filter-soft__item">
-                <input class="visually-hidden filter__soft-input filter__soft-input--radio" type="radio"
+                <input class="visually-hidden filter-soft__input filter-soft__input--radio" type="radio"
                   name="soft-group" value="windows" id="filter-windows">
                 <label class="filter-soft__label" for="filter-windows">
                   Windows Phone</label>
@@ -305,9 +305,10 @@
         </div>
         <div class="achievements__button-wrapper">
           <button type="submit" class="button achievements__button">Отправить форму</button>
-          <p class="filter__legend">
+          <p class="achievements__legend">
             <small>
-              <span class="filter__star">*</span> — обязательные <span class="filter__hidden">для заполнения</span> поля
+              <span class="achievements__star">*</span> — обязательные <span class="achievements__hidden">для
+                заполнения</span> поля
             </small>
           </p>
         </div>
@@ -317,7 +318,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
-        <a class="page-footer__logo--link" href="#">
+        <a class="page-footer__link" href="#">
           <svg class="page-footer__link-1" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px"
             viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
@@ -410,8 +411,8 @@
         </ul>
       </div>
       <div class="page-footer__developer">
-        <p class="page-footer__developer--text">Разработано</p>
-        <p class="page-footer__developer--icon">
+        <p class="page-footer__developer-text">Разработано</p>
+        <p class="page-footer__developer-icon">
           <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"

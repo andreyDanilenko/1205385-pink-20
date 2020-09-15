@@ -1,18 +1,36 @@
 .price {
   background-color: $gray;
+  margin-top: -130px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -25px;
+  }
+}
+
+.price::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 160px;
+  background-image: url("/img/bg-triangle-white.svg");
+  background-size: cover;
 }
 
 .price__wrapper {
   max-width: 940px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 75px;
 
   @media (min-width: $tablet-width) {
-    padding: 70px 20px;
+    padding: 45px 20px 75px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 98px 20px;
+    padding: 60px 20px 98px;
   }
 }
 
@@ -42,13 +60,13 @@
 
   @media (min-width: $tablet-width) {
     min-width: 113px;
-    padding: 19px 20px 16px;
+    padding: 16px 20px 16px;
     font-size: 18px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 193px;
-    padding: 23px 20px 25px;
+    padding: 23px 20px 17px;
   }
 
   &:nth-child(2) {
@@ -59,6 +77,12 @@
   &:nth-child(4) {
     border-radius: 0 3px 0 0;
     border-left: 2px solid $whisper;
+  }
+
+  &--hidden {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
   }
 }
 
@@ -78,7 +102,7 @@
   }
 }
 
-.price__cell--empty {
+.price__cell-head--empty {
   border: none;
   background: none;
 }

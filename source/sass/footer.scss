@@ -87,22 +87,22 @@
   justify-content: center;
   display: flex;
   margin-top: 16px;
+}
 
-  &--text {
-    margin: 0;
-    margin-right: 15px;
+.page-footer__developer-text {
+  margin: 0;
+  margin-right: 15px;
+}
+
+.page-footer__developer-icon {
+  cursor: pointer;
+  margin: 0;
+
+  &:hover path {
+    fill: $midnight;
   }
 
-  &--icon {
-    cursor: pointer;
-    margin: 0;
-
-    &:hover path {
-      fill: $midnight;
-    }
-
-    &:active path {
-      fill: rgba(40, 54, 69, 0.3);
-    }
+  &:active path {
+    fill: rgba(40, 54, 69, 0.3);
   }
 }
