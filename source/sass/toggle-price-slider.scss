@@ -76,11 +76,20 @@
   display: none;
 
   @media (min-width: $desktop-width) {
+    cursor: pointer;
     position: absolute;
     display: block;
     top: 220px;
     left: 0;
     fill: rgba(40, 54, 69, 0.3);
+
+    &:hover {
+      fill: rgba(40, 54, 69, 1);
+    }
+
+    &:active {
+      fill: rgba(40, 54, 69, 0.1);
+    }
   }
 }
 
@@ -88,11 +97,20 @@
   display: none;
 
   @media (min-width: $desktop-width) {
+    cursor: pointer;
     position: absolute;
     display: block;
     top: 220px;
     right: 0;
     fill: rgba(40, 54, 69, 0.3);
+
+    &:hover {
+      fill: rgba(40, 54, 69, 1);
+    }
+
+    &:active {
+      fill: rgba(40, 54, 69, 0.1);
+    }
   }
 }
 
