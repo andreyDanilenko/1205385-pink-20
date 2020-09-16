@@ -10,6 +10,13 @@
 </head>
 
 <body class="page">
+
+  <svg style="display: none;">
+    <symbol id="icon-login" viewBox="0 0 595.28 61.905">
+      <polygon points="297.64,61.905 0,0 595.28,0 " />
+    </symbol>
+  </svg>
+
   <header class="page-header">
     <nav class="main-nav main-nav--hidden main-nav--closed main-nav--nojs">
       <div class="page-header__wrapper">
@@ -388,10 +395,8 @@
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
       <div class="map__triangle">
-        <svg class="map__triangle-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px" y="0px" width="595" height="62" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905"
-          xml:space="preserve">
-          <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 " />
+        <svg class="map__triangle-icon" width="595" height="62" viewBox="0 0 595.28 61.905">
+          <use xlink:href="#icon-login"></use>
         </svg>
       </div>
       <div class="map__marker">
